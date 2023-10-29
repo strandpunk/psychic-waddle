@@ -1,0 +1,29 @@
+.items__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  /* background-color: #358f5a; */
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  transition: transform 500ms ease;
+
+  box-shadow: 4px 4px 8px 9px rgba(34, 60, 80, 0.2);
+}
+
+.items__wrapper h2,
+.items__wrapper p,
+.items__wrapper b {
+  color: #333;
+}
+
+.item:hover {
+  transform: scale(1.15);
+}

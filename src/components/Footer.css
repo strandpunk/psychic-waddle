@@ -1,0 +1,8 @@
+div#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccfd3;
+  height: 200px;
+  margin-top: 30px;
+}
