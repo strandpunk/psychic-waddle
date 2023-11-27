@@ -18,17 +18,13 @@ const Navbar = () => {
       </div>
       <div id="tagline">Объединяем город, сближаем людей!</div>
       <div id="navbar__menu">
-        <NavLink className="navbar-navlink" to="/lessons" element={<Lessons />}>
+        <NavLink to="/lessons" element={<Lessons />}>
           Каталог
         </NavLink>
-        <NavLink className="navbar-navlink" to="/login" element={<Login />}>
+        <NavLink to="/login" element={<Login />}>
           Вход
         </NavLink>
-        <NavLink
-          className="navbar-navlink"
-          to="/register"
-          element={<Register />}
-        >
+        <NavLink to="/register" element={<Register />}>
           Регистрация
         </NavLink>
       </div>
