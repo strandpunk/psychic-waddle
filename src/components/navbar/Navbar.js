@@ -1,8 +1,8 @@
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
-import Lessons from "./Lessons";
+import Login from "../login/Login";
+import Register from "../register/Register";
+import Lessons from "../Lessons";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link to={"/"}>
           <img
             alt="Санкт-Петербургский Метрополитен"
-            src={require("../images/logo.svg").default}
+            src={require("../../images/logo.svg").default}
             className="desktop_logo"
           />
         </Link>
@@ -21,10 +21,14 @@ const Navbar = () => {
         <NavLink className="navbar-navlink" to="/lessons" element={<Lessons />}>
           Каталог
         </NavLink>
-        <NavLink className="navbar-navlink" to="/signin" element={<SignIn />}>
+        <NavLink className="navbar-navlink" to="/login" element={<Login />}>
           Вход
         </NavLink>
-        <NavLink className="navbar-navlink" to="/signup" element={<SignUp />}>
+        <NavLink
+          className="navbar-navlink"
+          to="/register"
+          element={<Register />}
+        >
           Регистрация
         </NavLink>
       </div>
